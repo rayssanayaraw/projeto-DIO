@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Criando uma página Web utilizando as Tags aprendidas</h1>
+      <p>
+        Este é um exemplo de uma página HTML simples que utiliza várias tags
+        aprendidas.
+      </p>
+      <br />
+      <hr />
+      <br />
+      <nav>
+        <ul>
+          <li><a href="#section1">Estrutura básica do HTML</a></li>
+          <li><a href="#section2">Formulários</a></li>
+          <li><a href="#section3">Formatações</a></li>
+          <li><a href="#section4">Tabelas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="section1">
+        <h2>Estrutura básica do HTML</h2>
+        <img
+          src="estruturahtml.png"
+          alt="A imagem mostra o código da estrutura básica do HTML"
+        />
+
+        <p>
+          O <strong><code>&lt;head&gt;</code></strong> funciona como o "cérebro"
+          invisível da sua página, organizando todas as "regras" e metadados que
+          o navegador precisa para entender e carregar o site. Já o
+          <strong><code>&lt;body&gt;</code></strong> é onde a mágica acontece:
+          ele mostra tudo o que o usuário vai ver e interagir, desde textos e
+          imagens até formulários e vídeos.
+        </p>
+
+        <p>
+          Com o HTML, você pode construir a estrutura básica de qualquer
+          conteúdo web. É possível escrever textos, usar títulos de diversos
+          tamanhos com as tags <strong><code>&lt;h1&gt;</code></strong> a
+          <strong><code>&lt;h6&gt;</code></strong
+          >, organizar informações em listas numeradas (<strong
+            ><code>&lt;ol&gt;</code></strong
+          >) ou com marcadores (<strong><code>&lt;ul&gt;</code></strong
+          >). Além disso, você pode conectar páginas e outros sites através de
+          links clicáveis usando a tag <strong><code>&lt;a&gt;</code></strong
+          >. E tem muito mais que você pode fazer diretamente no HTML para
+          estruturar seu conteúdo!
+        </p>
+      </section>
+
+      <section id="section2">
+        <h2>Formulários</h2>
+        <p>
+          Os formulários HTML são a espinha dorsal da interação em sites. É
+          através deles que os usuários conseguem enviar dados para um servidor,
+          seja para fazer login, preencher um cadastro, enviar uma mensagem de
+          contato, fazer uma pesquisa, ou até mesmo realizar uma compra.
+        </p>
+        <p>
+          Exemplo de <strong><code>&lt;form&gt;</code></strong
+          >:
+        </p>
+
+        <div class="form">
+          <form action="/processar-dados" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" /><br /><br />
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" /><br /><br />
+            <label for="aniversario">Aniversario:</label>
+            <input
+              type="date"
+              id="aniversario"
+              name="aniversario"
+            /><br /><br />
+            <input type="submit" value="Enviar" />
+          </form>
+        </div>
+      </section>
+
+      <section id="section3">
+        <h2>Formatações</h2>
+        <p>
+          O <strong><code>&lt;div&gt;</code></strong> não tem nenhum significado
+          semântico próprio. Ele é usado principalmente para agrupar outros
+          elementos HTML para fins de estilização (com CSS) ou manipulação (com
+          JavaScript).
+        </p>
+        <p>
+          Assim como o <strong><code>&lt;div&gt;</code></strong
+          >, o <strong><code>&lt;span&gt;</code></strong> não tem significado
+          semântico próprio. Ele é usado para
+          <span style="color: orangered; font-weight: bold"
+            >aplicar estilos a pequenas partes de texto</span
+          >
+          ou a elementos em linha dentro de um parágrafo, por exemplo.
+        </p>
+        <p>
+          A tag <strong><code>&lt;embed&gt;</code></strong> é usada para
+          incorporar conteúdo externo (como documentos PDF, vídeos, áudios,
+          animações Flash, ou outros tipos de mídia) diretamente no seu
+          documento HTML. É um elemento de "slot" para conteúdo plug-in. <br />
+          <mark><u>Observação:</u></mark> Embora o
+          <strong><code>&lt;embed&gt;</code></strong> seja funcional, para
+          incorporar vídeos e áudios, as tags
+          <strong><code>&lt;video&gt;</code></strong> e
+          <strong><code>&lt;audio&gt;</code></strong> são preferíveis, pois
+          oferecem mais controle e melhor suporte. Para incorporar conteúdo de
+          outras páginas web, o <strong><code>&lt;iframe&gt;</code></strong> é
+          mais comum (como para incorporar vídeos do YouTube ou mapas do
+          Google).
+        </p>
+        <p>
+          Exemplo <strong><code>&lt;iframe&gt;</code></strong
+          >:
+        </p>
+        <iframe
+          width="600"
+          height="300"
+          src="https://www.youtube.com/embed/W4-G-itMgjI?list=RDW4-G-itMgjI"
+          title="Pitty - Máscara (Clipe Oficial)"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="section4">
+        <h2>Tabelas</h2>
+        <p>
+          As tabelas HTML são usadas para organizar dados em linhas e colunas,
+          tornando a informação estruturada e fácil de ler. Elas são ideais para
+          apresentar dados tabulares, como informações financeiras, listas de
+          produtos, horários, ou qualquer conjunto de dados que se beneficie de
+          uma organização em grade.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th>Clube</th>
+              <th>pts</th>
+              <th>PJ</th>
+              <th>VIT</th>
+              <th>E</th>
+              <th>DER</th>
+              <th>GM</th>
+              <th>GC</th>
+              <th>SG</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flamengo</td>
+              <td>27</td>
+              <td>13</td>
+              <td>8</td>
+              <td>3</td>
+              <td>2</td>
+              <td>26</td>
+              <td>9</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>Cruzeiro</td>
+              <td>27</td>
+              <td>13</td>
+              <td>8</td>
+              <td>3</td>
+              <td>2</td>
+              <td>21</td>
+              <td>5</td>
+              <td>21</td>
+            </tr>
+            <tr>
+              <td>Bragantino</td>
+              <td>27</td>
+              <td>14</td>
+              <td>8</td>
+              <td>3</td>
+              <td>3</td>
+              <td>18</td>
+              <td>14</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Bahia</td>
+              <td>24</td>
+              <td>13</td>
+              <td>7</td>
+              <td>3</td>
+              <td>3</td>
+              <td>16</td>
+              <td>12</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="9">Total de clubes: 4</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+    </main>
+  </body>
+  <footer>
+    <p>Desenvolvido por: Rayssa Nayara</p>
+    <a href="https://www.instagram.com/rayssanayaraw/"> Instagram </a>
+    <a href="https://github.com/rayssanayaraw"> GitHub </a>
+  </footer>
+</html>
